@@ -565,8 +565,10 @@ Example:
 function TBoxArray.getMiddle(): TPoint;
 var
   i : integer;
+  b: TBox;
 begin
-  result := self.getBounds().getMiddle();
+  b := self.getBounds();
+  result := b.getMiddle();
 end;
 
 (*

@@ -500,7 +500,7 @@ Example:
 *)
 procedure debugBitmap(bmp: integer);
 begin
-  getMufasaBitmap(bmp).debug();
+  //getMufasaBitmap(bmp).debug();
 end;
 
 {$f+}

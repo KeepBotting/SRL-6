@@ -91,7 +91,7 @@ begin
     name := 'RS Metrics';
     ID := ID_INTERFACE_METRICS;
     parentID := -1;
-    static := false;
+    isStatic := false;
   end;
 end;
 {$ENDIF}

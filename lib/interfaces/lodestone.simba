@@ -143,10 +143,10 @@ procedure TRSLodestoneScreen.__init();
 begin
   with (self) do
   begin
-    name := 'RS Production Screen';
+    name := 'RS Lodestone Screen';
     ID := ID_INTERFACE_LODESTONE;
     parentID := -1;
-    static := false;
+    isStatic := false;
   end;
 end;
 {$ENDIF}

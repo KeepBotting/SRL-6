@@ -86,7 +86,7 @@ begin
     name := 'RS Choose Tool Screen';
     ID := ID_INTERFACE_TOOL;
     parentID := -1;
-    static := false;
+    isStatic := false;
   end;
 end;
 {$ENDIF}

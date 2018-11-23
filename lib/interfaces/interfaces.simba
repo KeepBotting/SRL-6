@@ -142,7 +142,7 @@ type
   TRSInterface = record
     name: string;
     ID, parentID: integer;
-    static: boolean;
+    isStatic: boolean;
     x, y, w, h: integer;
     x1, y1, x2, y2: integer;
     cx, cy: integer;
@@ -257,8 +257,11 @@ Example:
     end;
 *)
 function TRSInterface.getCenterPoint(): TPoint;
+var
+  b: TBox;
 begin
-  result := self.getBounds().getMiddle();
+  b := self.getBounds();
+  result := b.getMiddle();
 end;
 
 {$f+}
